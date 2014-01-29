@@ -1,7 +1,7 @@
 class TextOutput
 
 	def initialize
-		@move_prompt = "Please enter a valid move (h = help)"
+		@move_prompt = "Please enter a valid move (q = quit)"
 	end
 	
 	def print_prompt prompt
@@ -43,5 +43,13 @@ class TextOutput
 	def game_quit
 		puts "Play again soon!"
 	end 
+	
+	def character_error
+		puts "Please enter a valid selection!"
+	end
+	
+	def taken_error
+		puts "That location is already taken!  Try another!"
+	end
 	
 end
